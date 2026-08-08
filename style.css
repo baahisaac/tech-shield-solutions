@@ -101,3 +101,18 @@
     display: block !important;
   }
 }
+@media (max-width: 768px) {
+  .project-image,
+  .project-card > img {
+    height: 330px !important;
+    object-fit: cover !important;
+    object-position: top center !important;
+  }
+
+  .project-image img {
+    width: 100% !important;
+    height: 330px !important;
+    object-fit: cover !important;
+    object-position: top center !important;
+  }
+}
