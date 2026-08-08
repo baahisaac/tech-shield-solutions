@@ -75,3 +75,18 @@
     grid-template-columns: 1fr !important;
   }
 }
+@media (max-width: 768px) {
+
+  .project-image {
+    height: auto !important;
+  }
+
+  .project-card img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    object-position: top center !important;
+    display: block;
+  }
+
+}
