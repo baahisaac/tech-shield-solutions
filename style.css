@@ -77,16 +77,27 @@
 }
 @media (max-width: 768px) {
 
-  .project-image {
-    height: auto !important;
-  }
-
-  .project-card img {
+  .project-image,
+  .project-card > img {
     width: 100% !important;
     height: auto !important;
-    object-fit: contain !important;
-    object-position: top center !important;
-    display: block;
+    min-height: 0 !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
+    overflow: visible !important;
   }
 
+  .project-image img,
+  .project-card > img {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
+    object-fit: contain !important;
+    object-position: top center !important;
+    transform: none !important;
+    display: block !important;
+  }
 }
